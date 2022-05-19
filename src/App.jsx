@@ -1,10 +1,13 @@
 import React from 'react'
-
+import Navbar from './components/Navbar'
+import Programs from './components/Program'
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <header cy-data="image-header"></header>
+      <Programs />
+      <Navbar />
+    </>
   )
 }
 

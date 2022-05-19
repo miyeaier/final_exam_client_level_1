@@ -6,7 +6,9 @@ describe('user can see first page', () => {
     cy.visit("/");
   });
 
-  it("is expected to show a list of programs", () => {
-    cy.get("[data-cy=program-list]").children().should("have.length", 10);
-  })
+  describe('Header', () => {
+    it("is expected to see image in the header", () => {
+      cy.get("[cy-data=image-header]").should("be.visible")
+    })
+  });
 });
