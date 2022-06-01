@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Programs from './components/Program'
+import Programs from './components/Programs'
+
 const App = () => {
   return (
     <>
-      <header cy-data="image-header"></header>
-      <Programs />
+      <header data-cy="image-header"></header>
       <Navbar />
+      <Programs />
     </>
   )
 }
