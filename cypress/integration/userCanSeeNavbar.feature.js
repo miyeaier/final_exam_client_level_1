@@ -8,7 +8,7 @@ describe('user can see first page', () => {
 
   describe('Header', () => {
     it("is expected to see image in the header", () => {
-      cy.get("[cy-data=image-header]").should("be.visible")
+      cy.get("[data-cy=image-header]").should("be.visible")
     })
   });
 });
